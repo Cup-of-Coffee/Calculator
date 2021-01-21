@@ -4,12 +4,21 @@ DATE: 1/15/2021
 PROJECT: Calculator
 */ 
 
+import java.util.Scanner;
+
 public class CalculatorProgram {
 
     public static void main(String[] args){
 
-        // TEST
-        
+        // Setup for temporary Scanner.
+        Scanner Scan = Scanner(System. in);
+
+        // First input.
+        System.out.println("Input First Number.");
+        int firstNum = Scan.nextInt();
+
+
+
     }
 
 }
