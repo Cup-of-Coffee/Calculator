@@ -17,7 +17,14 @@ public class CalculatorProgram {
         System.out.println("Input First Number.");
         int firstNum = Scan.nextInt();
 
-        
+        // Second input.
+        System.out.println("Input Operator.");
+        String operator = Scan.nextLine();
+
+        // Third input.
+        System.out.println("Input Last Number.");
+        int lastNum = Scan.nextInt();
+
 
     }
 
