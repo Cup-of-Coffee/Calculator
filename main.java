@@ -6,12 +6,12 @@ PROJECT: Calculator
 
 import java.util.Scanner;
 
-public class CalculatorProgram {
+public class main {
 
     public static void main(String[] args){
 
         // Setup for temporary Scanner.
-        Scanner Scan = Scanner(System. in);
+        Scanner Scan = new Scanner(System. in);
 
         // First input.
         System.out.println("Input First Number.");
