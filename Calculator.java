@@ -6,7 +6,7 @@ PROJECT: Calculator
 
 import java.util.Scanner;
 
-public class main {
+public class Calculator {
 
     public static void main(String[] args){
 
