@@ -13,32 +13,36 @@ public class Calculator {
         // Setup for temporary Scanner.
         Scanner Scan = new Scanner(System. in);
 
-        // First input.
-        System.out.println("Input First Number.");
-        int firstNum = Scan.nextInt();
+        boolean endVariable = false;
 
-        // Second input.
-        System.out.println("Input Operator.");
-        String operator = Scan.nextLine();
+        do{
 
-        // Third input.
-        System.out.println("Input Last Number.");
-        int lastNum = Scan.nextInt();
+            // First input.
+            System.out.println("Input First Number.");
+            int firstNum = Scan.nextInt();
+
+            // Second input.
+            System.out.println("Input Operator.");
+            String operator = Scan.nextLine();
+
+            // Third input.
+            System.out.println("Input Last Number.");
+            int lastNum = Scan.nextInt();
+
+        }while(endVariable = false);
+
+        Scan.close();
 
     }
 
     // Method to perform the addition operation.
-    static void additionOp(double inputOne, double inputTwo) {
-
-
-
+    static double additionOp(double inputOne, double inputTwo) {
+        return inputOne + inputTwo;
     }
 
     // Method to perform the subtraction operation.
-    static void subtractionOp() {
-        
-
-        
+    static double subtractionOp(double inputOne, double inputTwo) {
+        return inputOne - inputTwo;
     }
 
 }
