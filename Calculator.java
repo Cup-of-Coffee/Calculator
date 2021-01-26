@@ -25,7 +25,20 @@ public class Calculator {
         System.out.println("Input Last Number.");
         int lastNum = Scan.nextInt();
 
+    }
 
+    // Method to perform the addition operation.
+    static void additionOp(double inputOne, double inputTwo) {
+
+
+
+    }
+
+    // Method to perform the subtraction operation.
+    static void subtractionOp() {
+        
+
+        
     }
 
 }
