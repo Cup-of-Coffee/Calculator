@@ -5,25 +5,57 @@ let numberSecond;
 
 
 
-function display (){
+function updateDisplay (){
 
 };
+
+
+
+function clearDisplay (){
+
+}
 
 
 
 function operate (valueOne, valueTwo, operator){
     if(operator === 'addition'){
-        return;
+        return addition(valueOne, valueTwo);
     }else if(operator === 'subtraction'){
-        return;
+        return subtraction(valueOne, valueTwo);
     }else if(operator === 'multiplication'){
-        return;
+        return multiplication(valueOne, valueTwo);
     }else if(operator === 'division'){
-        return;
+        return division(valueOne, valueTwo);
     }else{
-        return;
+        console.log('ERROR');
     };
 };
+
+
+
+function addition(){
+
+};
+
+
+
+function subtraction(){
+
+};
+
+
+
+function multiplication(){
+
+};
+
+
+
+function division(){
+
+};
+
+
 
 
 
