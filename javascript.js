@@ -4,19 +4,25 @@ let operator;
 let numberSecond;
 
 
-
+/*
+Update display when a button is clicked.
+*/
 function updateDisplay (){
 
 };
 
 
-
-function clearDisplay (){
+/*
+Clear calculation.
+*/
+function clear (){
 
 }
 
 
-
+/*
+Compute calculation.
+*/
 function operate (valueOne, valueTwo, operator){
     if(operator === 'addition'){
         return addition(valueOne, valueTwo);
@@ -32,32 +38,33 @@ function operate (valueOne, valueTwo, operator){
 };
 
 
-
+/*
+Add the two numbers provided.
+*/
 function addition(){
 
 };
 
 
-
+/*
+Subtract the two numbers provided.
+*/
 function subtraction(){
 
 };
 
 
-
+/*
+Multiply the two numbers provided.
+*/
 function multiplication(){
 
 };
 
 
-
+/*
+Divide the two numbers provided.
+*/
 function division(){
 
 };
-
-
-
-
-
-
-
