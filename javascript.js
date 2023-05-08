@@ -50,7 +50,7 @@ function addition(valueOne, valueTwo){
 Subtract the two numbers provided.
 */
 function subtraction(valueOne, valueTwo){
-
+    return valueOne - valueTwo;
 };
 
 
