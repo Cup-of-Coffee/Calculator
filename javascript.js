@@ -66,5 +66,5 @@ function multiplication(valueOne, valueTwo){
 Divide the two numbers provided.
 */
 function division(valueOne, valueTwo){
-
+    return valueOne / valueTwo;
 };
