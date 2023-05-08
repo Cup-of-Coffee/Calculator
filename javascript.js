@@ -41,15 +41,15 @@ function operate (valueOne, valueTwo, operator){
 /*
 Add the two numbers provided.
 */
-function addition(){
-
+function addition(valueOne, valueTwo){
+    return valueOne + valueTwo;
 };
 
 
 /*
 Subtract the two numbers provided.
 */
-function subtraction(){
+function subtraction(valueOne, valueTwo){
 
 };
 
@@ -57,7 +57,7 @@ function subtraction(){
 /*
 Multiply the two numbers provided.
 */
-function multiplication(){
+function multiplication(valueOne, valueTwo){
 
 };
 
@@ -65,6 +65,6 @@ function multiplication(){
 /*
 Divide the two numbers provided.
 */
-function division(){
+function division(valueOne, valueTwo){
 
 };
