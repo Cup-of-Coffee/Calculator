@@ -58,7 +58,7 @@ function subtraction(valueOne, valueTwo){
 Multiply the two numbers provided.
 */
 function multiplication(valueOne, valueTwo){
-
+    return valueOne * valueTwo;
 };
 
 
