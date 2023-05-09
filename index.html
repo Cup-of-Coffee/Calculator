@@ -15,27 +15,59 @@
     
             <div id="buttonGrid">
                 <div id="operatorPad">
-                    <div id="additionButton">+</div>
-                    <div id="subtractButton">-</div>
-                    <div id="multiplicationButton">x</div>
-                    <div id="divisonButton">/</div>
-                    <div id="equalButton">=</div>
+                    <div>
+                        <button id="additionButton" onclick="addition(valueOne, valueTwo)">+</button>
+                    </div>
+                    <div>
+                        <button id="subtractButton" onclick="subtraction(valueOne, valueTwo)">-</button>
+                    </div>
+                    <div id="multiplicationButton">
+                        <button onclick="multiplication(valueOne, valueTwo)">x</button>
+                    </div>
+                    <div id="divisonButton">
+                        <button onclick="division(valueOne, valueTwo)">/</button>
+                    </div>
+                    <div id="equalButton">
+                        <button onclick="operate(valueOne, valueTwo, operator)">=</button>
+                    </div>
                 </div>
                 
                 <div id="numberPad">
-                    <div id="oneButton">1</div>
-                    <div id="twoButton">2</div>
-                    <div id="threeButton">3</div>
-                    <div id="fourButton">4</div>
-                    <div id="fiveButton">5</div>
-                    <div id="sixButton">6</div>
-                    <div id="sevenButton">7</div>
-                    <div id="eightButton">8</div>
-                    <div id="nineButton">9</div>
-                    <div id="zeroButton">0</div>
+                    <div id="oneButton">
+                        <button onclick="">1</button>
+                    </div>
+                    <div id="twoButton">
+                        <button onclick="">2</button>
+                    </div>
+                    <div id="threeButton">
+                        <button onclick="">3</button>
+                    </div>
+                    <div id="fourButton">
+                        <button onclick="">4</button>
+                    </div>
+                    <div id="fiveButton">
+                        <button onclick="">5</button>
+                    </div>
+                    <div id="sixButton">
+                        <button onclick="">6</button>
+                    </div>
+                    <div id="sevenButton">
+                        <button onclick="">7</button>
+                    </div>
+                    <div id="eightButton">
+                        <button onclick="">8</button>
+                    </div>
+                    <div id="nineButton">
+                        <button onclick="">9</button>
+                    </div>
+                    <div id="zeroButton">
+                        <button onclick="">0</button>
+                    </div>
                 </div>
 
-                <div id="clearButton">c</div>
+                <div id="clearButton">
+                    <button onclick="clear()">c</button>
+                </div>
             </div>
         </div>
         <footer>

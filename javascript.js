@@ -7,7 +7,7 @@ let numberSecond;
 /*
 Update display when a button is clicked.
 */
-function updateDisplay (){
+function updateDisplay(){
 
 };
 
@@ -15,7 +15,7 @@ function updateDisplay (){
 /*
 Clear calculation.
 */
-function clear (){
+function clear(){
 
 }
 
@@ -23,7 +23,7 @@ function clear (){
 /*
 Compute calculation.
 */
-function operate (valueOne, valueTwo, operator){
+function operate(valueOne, valueTwo, operator){
     if(operator === 'addition'){
         return addition(valueOne, valueTwo);
     }else if(operator === 'subtraction'){
