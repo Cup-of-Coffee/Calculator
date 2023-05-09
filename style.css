@@ -30,7 +30,10 @@ body {
     padding: 10px;
 }
 
-
+#row {
+    display: flex; 
+    justify-content: center;
+}
 
 
 
