@@ -1,11 +1,34 @@
 
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: lightgrey;
+}
 
+#container {
+    display: flex;
+    flex-direction: column;
+}
 
+#buttonGrid {
+    display: flex;
+    justify-content: center;
+}
 
+#operatorPad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
 
-
-
-
+#numberPad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
 
 
 
