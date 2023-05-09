@@ -16,36 +16,36 @@
             <div id="buttonGrid">
                 <div id="operatorPad">
                     <div id="row">
-                        <button id="additionButton" onclick="addition(valueOne, valueTwo)">+</button>
-                        <button id="subtractButton" onclick="subtraction(valueOne, valueTwo)">-</button>
+                        <button id="additionButton" onclick="update('+')">+</button>
+                        <button id="subtractButton" onclick="update('-')">-</button>
                     </div>
                     <div id="row">
-                        <button id="multiplicationButton" onclick="multiplication(valueOne, valueTwo)">x</button>
-                        <button id="divisonButton" onclick="division(valueOne, valueTwo)">/</button>
+                        <button id="multiplicationButton" onclick="update('+')">x</button>
+                        <button id="divisonButton" onclick="update('/')">/</button>
                     </div>
                     <div id="row">
-                        <button id="equalButton" onclick="operate(valueOne, valueTwo, operator)">=</button>
+                        <button id="equalButton" onclick="operate()">=</button>
                         <button id="clearButton" onclick="clear()">c</button>
                     </div>
                 </div>
                 
                 <div id="numberPad">
                     <div id="row">
-                        <button id="oneButton" onclick="">1</button>
-                        <button id="twoButton" onclick="">2</button>
-                        <button id="threeButton" onclick="">3</button>
+                        <button id="oneButton" onclick="update('1')">1</button>
+                        <button id="twoButton" onclick="update('2')">2</button>
+                        <button id="threeButton" onclick="update('3')">3</button>
                     </div>
                     <div id="row">
-                        <button id="fourButton" onclick="">4</button>
-                        <button id="fiveButton" onclick="">5</button>
-                        <button id="sixButton" onclick="">6</button>
+                        <button id="fourButton" onclick="update('4')">4</button>
+                        <button id="fiveButton" onclick="update('5')">5</button>
+                        <button id="sixButton" onclick="update('6')">6</button>
                     </div>
                     <div id="row">
-                        <button id="sevenButton" onclick="">7</button>
-                        <button id="eightButton" onclick="">8</button>
-                        <button id="nineButton" onclick="">9</button>
+                        <button id="sevenButton" onclick="update('7')">7</button>
+                        <button id="eightButton" onclick="update('8')">8</button>
+                        <button id="nineButton" onclick="update('9')">9</button>
                     <div id="row">
-                        <button id="zeroButton" onclick="">0</button>
+                        <button id="zeroButton" onclick="update('0')">0</button>
                     </div>
                 </div>
             </div>
