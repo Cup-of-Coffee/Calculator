@@ -5,11 +5,19 @@ let numberSecond;
 
 
 /*
-Update display when a button is clicked.
+Populate the display with the latest number input or answer.
 */
-function updateDisplay(){
-
+function display(input){
+    return input;
 };
+
+
+/*
+Update 
+*/
+function update(char){
+
+}
 
 
 /*
@@ -21,7 +29,7 @@ function clear(){
 
 
 /*
-Compute calculation.
+Translate the given formula into readable numbers and operators, then compute the calculation in order it was typed.
 */
 function operate(valueOne, valueTwo, operator){
     if(operator === 'addition'){
