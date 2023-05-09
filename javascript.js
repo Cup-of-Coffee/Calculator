@@ -15,17 +15,48 @@ function display(input){
 Update formula with a number.
 */
 function update(number){
-
+    return formula =+ number;
 }
 
 
 /*
-Update formula with either number or operator.
+Does one of two things:
+ @ If a number is just given before calculate() was executed, it'll wait for a second number to but given.
+ @ If a number, a operator and a number was given before calculate() was executed, then it'll perform a operate() and add the operator at the end of it.
 */
 function calculate(operator){
-
-
     
+    // Stops if calculate was call before update() was called. BASICALLY MEANS YOU CANNOT CLICK + TWICE SINCE IT'LL BREAK OTHERWISE
+    if(tempInputToSeeifUpdate() === wasCalled){
+        return;
+    }
+
+    // Determine if a number, a operator and a number was given before calculate() was executed, then operate the given inputs first.
+    if(statement){
+        operate();
+    }
+
+
+    // Determine which operator was called; then add the operator next.
+    if(operator === '+'){
+
+
+
+    }else if(operator === '-'){
+
+
+
+    }else if(operator === 'x'){
+
+
+
+    }else{
+
+
+
+    }
+
+
 }
 
 
