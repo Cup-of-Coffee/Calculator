@@ -1,7 +1,6 @@
 
-let numberFirst;
-let operator;
-let numberSecond;
+// The display formula
+let formula;
 
 
 /*
@@ -13,10 +12,20 @@ function display(input){
 
 
 /*
-Update 
+Update formula with a number.
 */
-function update(char){
+function update(number){
 
+}
+
+
+/*
+Update formula with either number or operator.
+*/
+function calculate(operator){
+
+
+    
 }
 
 
