@@ -2,6 +2,7 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0px;
     background-color: lightgrey;
 }
@@ -9,6 +10,10 @@ body {
 #container {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    margin: 10px;
 }
 
 #buttonGrid {
