@@ -7,13 +7,18 @@ body {
 }
 
 #numberDisplay {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
+    flex-flow: row wrap;
+    position: relative;
 }
 
 #container {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
     padding: 100px 50px 100px 50px;
 }
