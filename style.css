@@ -4,12 +4,18 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0px;
+    padding: 0px;
     background-color: lightgrey;
 }
 
 #numberDisplay {
-    grid-column-start: 1;
-    grid-column-end: 5;
+        text-align: center;
+        margin: auto;
+        display: inline;
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-weight: bold;
 }
 
 #clear {
