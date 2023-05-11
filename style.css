@@ -6,38 +6,14 @@ body {
     background-color: lightgrey;
 }
 
-p {
-    text-align: center;
+#numberDisplay {
+    display: flex;
+    justify-content: center;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
     padding: 100px 50px 100px 50px;
 }
-
-#buttonGrid {
-    display: flex;
-    justify-content: center;
-}
-
-#operatorPad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#numberPad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#row {
-    display: flex; 
-    justify-content: center;
-}
-
-
-
-
