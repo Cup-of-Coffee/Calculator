@@ -9,13 +9,18 @@ body {
 }
 
 #numberDisplay {
-        text-align: center;
-        margin: auto;
-        display: inline;
-        position: relative;
-        grid-column-start: 1;
-        grid-column-end: 5;
-        font-weight: bold;
+    text-align: right;
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+    background-color: darkgrey;
+    border-radius: 5px;
+    margin: auto;
+    display: inline;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-weight: bold;
 }
 
 #clear {
