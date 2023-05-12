@@ -9,18 +9,18 @@ body {
 }
 
 #display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: right;
+    font-weight: bold;
+    border-radius: 5px;
     width: 400px;
     height: 100px;
-    font-size: 30px;
+    font-size: 50px;
     background-color: darkgrey;
-    border-radius: 5px;
-    margin: auto;
-    display: inline;
-    position: relative;
     grid-column-start: 1;
     grid-column-end: 5;
-    font-weight: bold;
 }
 
 #clear {

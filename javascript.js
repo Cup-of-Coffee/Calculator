@@ -1,19 +1,17 @@
 
 // The display components
-let componentOne;
-let componentTwo;
-let finalResult;
+let componentOne = "";
+let componentTwo = "";
+let finalResult = "";
 
 
 /*
 Populate the display with the latest number componet or final result with DOM.
 */
 function update(number){
-    const displayPicker = document.querySelector('display');
-    displayPicker.innerText = input;
-
-
-
+    const displayPicker = document.getElementById('display');
+    componentOne = componentOne + number;
+    displayPicker.innerText = componentOne;
 }
 
 
