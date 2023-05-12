@@ -57,10 +57,15 @@ function calculate(operator){
 
 
 /*
-Clear calculation.
+Clear variables and use DOM to reset the display.
 */
-function clear(){
-
+function erase(){
+    componentOne = ""
+    componentTwo = ""
+    finalResult = ""
+    
+    const displayPicker = document.getElementById('display');
+    displayPicker.innerText = "0";
 }
 
 
