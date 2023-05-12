@@ -1,21 +1,19 @@
 
-// The display formula
-let formula;
+// The display components
+let componentOne;
+let componentTwo;
+let finalResult;
 
 
 /*
-Populate the display with the latest number input or answer.
-*/
-function display(input){
-    return input;
-};
-
-
-/*
-Update formula with a number.
+Populate the display with the latest number componet or final result with DOM.
 */
 function update(number){
-    return formula =+ number;
+    const displayPicker = document.querySelector('display');
+    displayPicker.innerText = input;
+
+
+
 }
 
 

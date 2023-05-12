@@ -8,7 +8,7 @@ body {
     background-color: lightgrey;
 }
 
-#numberDisplay {
+#display {
     text-align: right;
     width: 400px;
     height: 100px;
