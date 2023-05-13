@@ -22,13 +22,14 @@ Does one of two things:
 */
 function calculate(operator){
     
-    // Stops if calculate was call before update() was called. BASICALLY MEANS YOU CANNOT CLICK + TWICE or SINCE IT'LL BREAK OTHERWISE
-    if(tempInputToSeeifUpdate() === wasCalled){
+    // Check if operator is already populated, if so just update operate to new one and await new number before completing operation.
+    if(operater){
+        // let operater = operator code here
         return;
     }
 
     // Determine if a number, a operator and a number was given before calculate() was executed, then operate the given inputs first.
-    switch(statement){
+    switch(operator){
         case 0:                         // +
             
         break;
