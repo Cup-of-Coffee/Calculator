@@ -1,3 +1,10 @@
+/* TODO
+
+# The default 0 is hardcoded and fake, figure out a way to let a zero be the first number when the page is loaded and when erase() is called that doesn't stack with new numbers.
+# Finish calculate()
+# Finish operate()
+
+*/
 
 // The display components
 let componentOne = "0";
