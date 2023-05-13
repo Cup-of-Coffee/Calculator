@@ -1,6 +1,6 @@
 
 // The display components
-let componentOne = "";
+let componentOne = "0";
 let componentTwo = "";
 let finalResult = "";
 
@@ -22,12 +22,28 @@ Does one of two things:
 */
 function calculate(operator){
     
-    // Stops if calculate was call before update() was called. BASICALLY MEANS YOU CANNOT CLICK + TWICE SINCE IT'LL BREAK OTHERWISE
+    // Stops if calculate was call before update() was called. BASICALLY MEANS YOU CANNOT CLICK + TWICE or SINCE IT'LL BREAK OTHERWISE
     if(tempInputToSeeifUpdate() === wasCalled){
         return;
     }
 
     // Determine if a number, a operator and a number was given before calculate() was executed, then operate the given inputs first.
+    switch(statement){
+        case 0:                         // +
+            
+        break;
+        case 1:                         // -
+            
+        break;
+        case 2:                         // x
+            
+        break;
+        case 3:                         // /
+            
+        break;
+    }
+    
+    
     if(statement){
         operate();
     }
@@ -40,7 +56,7 @@ function calculate(operator){
 
     }else if(operator === '-'){
 
-
+        
 
     }else if(operator === 'x'){
 
