@@ -48,10 +48,9 @@ Determines the final value of firstComponent and sets operatorComponent, then sw
 */
 function calculate(operator){
     
-    // Checks if secondComponent is set, if so then just execute operate().
+    // Checks if secondComponent is set, if so then just execute operate() and set the next operatorComponent.
     if(secondComponent){
         operate();
-        return;
     }
 
     switch(operator){
