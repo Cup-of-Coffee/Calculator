@@ -11,8 +11,8 @@
 // The display components
 let firstComponent = "";
 let secondComponent = "";
-let operatorComponent;
-let finalResult;
+let operatorComponent = "";
+let finalResult = "";
 
 
 /*
@@ -23,44 +23,11 @@ function update(number){
 
     if(!operatorComponent){
         firstComponent += number;
-        displayPicker.innerText = firstComponent;   
+        displayPicker.innerText = firstComponent;
     }else{
         secondComponent += number;
         displayPicker.innerText = secondComponent;
     }
-}
-
-
-/*
-Determines the final value of firstComponent and sets operatorComponent, then switch to secondComponent.
-*/
-function calculate(operator){
-    
-    // Checks if secondComponent is set, if so then just execute operate().
-    if(secondComponent){
-        operate();
-        return;
-    }
-
-    // Determine if a number, a operator and a number was given before calculate() was executed, then operate the given inputs first.
-    switch(operator){
-        case 0:                         // +
-            
-        break;
-        case 1:                         // -
-            
-        break;
-        case 2:                         // x
-            
-        break;
-        case 3:                         // /
-            
-        break;
-    }
-    
-    
-
-
 }
 
 
@@ -78,23 +45,47 @@ function erase(){
 
 
 /*
-Translate the given formula into readable numbers and operators, then compute the calculation in order it was typed.
+Determines the final value of firstComponent and sets operatorComponent, then switch to secondComponent.
 */
-function operate(valueOne, valueTwo, operator){
+function calculate(operator){
+    
+    // Checks if secondComponent is set, if so then just execute operate().
+    if(secondComponent){
+        operate();
+        return;
+    }
 
     switch(operator){
-        case 0:                         // +
-            returnaddition(valueOne, valueTwo);
+        case '+':
+            operatorComponent = '+';
             break;
-        case 1:                         // -
-            subtraction(valueOne, valueTwo);
+        case '-':
+            operatorComponent = '-';
             break;
-        case 2:                         // x
-            multiplication(valueOne, valueTwo);
+        case 'x':
+            operatorComponent = 'x';
             break;
-        case 3:                         // /
-            division(valueOne, valueTwo); 
+        case '/':
+            operatorComponent = '/';
             break;
+    }
+}
+
+
+/*
+Translate the given formula into readable numbers and operators, then compute the calculation in order it was typed.
+*/
+function operate(){
+
+    switch(operator){
+        case '+':
+            return addition();
+        case '-':
+            return subtraction();
+        case 'x':
+            return multiplication();
+        case '/':
+            return division(); 
     }
 };
 
