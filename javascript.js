@@ -1,6 +1,7 @@
 /* TODO
 # Add decimals
 # Add modus operator
+# Add keyboard support
 # Resolve edge-cases resulting in errors:
 > none currently.
 */
