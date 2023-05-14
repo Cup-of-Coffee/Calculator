@@ -3,6 +3,7 @@
 # Add modus operator
 # Add keyboard support
 # Add larger display to include firstComponent and operatorComponent above secondComponent
+# Separate erase into "Clear" which removes last input and "All Clear" which removes all inputs
 # Resolve edge-cases resulting in errors:
 > none currently.
 */
