@@ -32,13 +32,13 @@ function update(number){
 
 
 /*
-Determines the final value of component
+Determines the final value of firstComponent and sets operatorComponent, then switch to secondComponent.
 */
 function calculate(operator){
     
-    // Check if operator is already populated, if so just update operate to new one and await new number before completing operation.
-    if(operater){
-        // let operater = operator code here
+    // Checks if secondComponent is set, if so then just execute operate().
+    if(secondComponent){
+        operate();
         return;
     }
 
@@ -59,29 +59,6 @@ function calculate(operator){
     }
     
     
-    if(statement){
-        operate();
-    }
-
-
-    // Determine which operator was called; then add the operator next.
-    if(operator === '+'){
-
-
-
-    }else if(operator === '-'){
-
-        
-
-    }else if(operator === 'x'){
-
-
-
-    }else{
-
-
-
-    }
 
 
 }
