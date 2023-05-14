@@ -126,5 +126,11 @@ function multiplication(firstValue, secondValue){
 Divide the two numbers provided.
 */
 function division(firstValue, secondValue){
-    return (firstValue / secondValue);
+    console.log(firstValue);
+    console.log(secondValue);
+    if(firstValue === 0 && secondValue === 0){
+        return "CANNOT DIVIDE"
+    }else{
+        return (firstValue / secondValue);
+    }
 };
