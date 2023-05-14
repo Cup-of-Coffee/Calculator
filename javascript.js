@@ -1,11 +1,8 @@
 /* TODO
-
-# The default 0 is fake; remember to have a exception for when implementing decimals.
-# Finish calculate()
-# Finish operate()
+# Add decimals
+# Add modus operator
 # Resolve edge-cases resulting in errors:
-> If a user clicks a operator before inputting any number, it'll return a null error.
-
+> none currently.
 */
 
 // The display components
