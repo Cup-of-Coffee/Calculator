@@ -15,7 +15,7 @@ let operatorComponent = "";
 
 
 /*
-Populate the display with the latest number componet or final result with DOM.
+Populate the display with the latest number and update the display with DOM. These numbers are treated as strings.
 */
 function update(number){
     const displayPicker = document.getElementById('display');
@@ -34,9 +34,9 @@ function update(number){
 Clear variables and use DOM to reset the display.
 */
 function erase(){
-    componentOne = "";
+    firstComponent = "";
     operatorComponent = "";
-    componentTwo = "";
+    secondComponent = "";
     
     const displayPicker = document.getElementById('display');
     displayPicker.innerText = "0";
@@ -72,21 +72,25 @@ function calculate(operator){
 
 
 /*
-Combine firstComponent, operatorComponent and secondComponent, then compute them calculation in order with the final result set to firstComponent and displayed.
+Parse firstComponent and secondComponent into Ints, and use operatorComponent to decide operator function, 
+then compute them calculation in order with the final result set to firstComponent and displayed.
 */
 function operate(){
+    first = parseInt(firstComponent);
+    second = parseInt(secondComponent);
+
     switch(operatorComponent){
         case '+':
-            firstComponent = addition(firstComponent, secondComponent);
+            firstComponent = addition(first, second);
             break;
         case '-':
-            firstComponent = subtraction(firstComponent, secondComponent);
+            firstComponent = subtraction(first, second);
             break;
         case 'x':
-            firstComponent = multiplication(firstComponent, secondComponent);
+            firstComponent = multiplication(first, second);
             break;
         case '/':
-            firstComponent = division(firstComponent, secondComponent); 
+            firstComponent = division(first, second); 
             break;
     }
 
@@ -102,7 +106,7 @@ function operate(){
 Add the two numbers provided.
 */
 function addition(firstValue, secondValue){
-    return firstValue + secondValue;
+    return (firstValue + secondValue);
 };
 
 
@@ -110,7 +114,7 @@ function addition(firstValue, secondValue){
 Subtract the two numbers provided.
 */
 function subtraction(firstValue, secondValue){
-    return firstValue - secondValue;
+    return (firstValue - secondValue);
 };
 
 
@@ -118,7 +122,7 @@ function subtraction(firstValue, secondValue){
 Multiply the two numbers provided.
 */
 function multiplication(firstValue, secondValue){
-    return firstValue * secondValue;
+    return (firstValue * secondValue);
 };
 
 
@@ -126,5 +130,5 @@ function multiplication(firstValue, secondValue){
 Divide the two numbers provided.
 */
 function division(firstValue, secondValue){
-    return firstValue / secondValue;
+    return (firstValue / secondValue);
 };
