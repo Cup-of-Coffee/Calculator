@@ -1,15 +1,18 @@
 /* TODO
 
-# The default 0 is hardcoded and fake, figure out a way to let a zero be the first number when the page is loaded and when erase() is called that doesn't stack with new numbers.
+# The default 0 is fake; remember to have a exception for when implementing decimals.
 # Finish calculate()
 # Finish operate()
+# Resolve edge-cases resulting in errors:
+> If a user clicks a operator before inputting any number, it'll return a null error.
 
 */
 
 // The display components
-let componentOne = "0";
-let componentTwo = "";
-let finalResult = "";
+let firstComponent = "";
+let secondComponent = "";
+let operatorComponent;
+let finalResult;
 
 
 /*
@@ -17,15 +20,19 @@ Populate the display with the latest number componet or final result with DOM.
 */
 function update(number){
     const displayPicker = document.getElementById('display');
-    componentOne = componentOne + number;
-    displayPicker.innerText = componentOne;
+
+    if(!operatorComponent){
+        firstComponent += number;
+        displayPicker.innerText = firstComponent;   
+    }else{
+        secondComponent += number;
+        displayPicker.innerText = secondComponent;
+    }
 }
 
 
 /*
-Does one of two things:
- @ If a number is just given before calculate() was executed, it'll wait for a second number to but given.
- @ If a number, a operator and a number was given before calculate() was executed, then it'll perform a operate() and add the operator at the end of it.
+Determines the final value of component
 */
 function calculate(operator){
     
@@ -97,17 +104,21 @@ function erase(){
 Translate the given formula into readable numbers and operators, then compute the calculation in order it was typed.
 */
 function operate(valueOne, valueTwo, operator){
-    if(operator === 'addition'){
-        return addition(valueOne, valueTwo);
-    }else if(operator === 'subtraction'){
-        return subtraction(valueOne, valueTwo);
-    }else if(operator === 'multiplication'){
-        return multiplication(valueOne, valueTwo);
-    }else if(operator === 'division'){
-        return division(valueOne, valueTwo);
-    }else{
-        console.log('ERROR');
-    };
+
+    switch(operator){
+        case 0:                         // +
+            returnaddition(valueOne, valueTwo);
+            break;
+        case 1:                         // -
+            subtraction(valueOne, valueTwo);
+            break;
+        case 2:                         // x
+            multiplication(valueOne, valueTwo);
+            break;
+        case 3:                         // /
+            division(valueOne, valueTwo); 
+            break;
+    }
 };
 
 
