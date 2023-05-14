@@ -2,14 +2,15 @@
 # Add decimals
 # Add modus operator
 # Add keyboard support
+# Add larger display to include firstComponent and operatorComponent above secondComponent
 # Resolve edge-cases resulting in errors:
 > none currently.
 */
 
 // The display components
 let firstComponent = "";
-let secondComponent = "";
 let operatorComponent = "";
+let secondComponent = "";
 
 
 /*
