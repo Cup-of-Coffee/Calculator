@@ -12,7 +12,6 @@
 let firstComponent = "";
 let secondComponent = "";
 let operatorComponent = "";
-let finalResult = "";
 
 
 /*
@@ -35,9 +34,9 @@ function update(number){
 Clear variables and use DOM to reset the display.
 */
 function erase(){
-    componentOne = ""
-    componentTwo = ""
-    finalResult = ""
+    componentOne = "";
+    operatorComponent = "";
+    componentTwo = "";
     
     const displayPicker = document.getElementById('display');
     displayPicker.innerText = "0";
@@ -73,50 +72,59 @@ function calculate(operator){
 
 
 /*
-Translate the given formula into readable numbers and operators, then compute the calculation in order it was typed.
+Combine firstComponent, operatorComponent and secondComponent, then compute them calculation in order with the final result set to firstComponent and displayed.
 */
 function operate(){
-
-    switch(operator){
+    switch(operatorComponent){
         case '+':
-            return addition();
+            firstComponent = addition(firstComponent, secondComponent);
+            break;
         case '-':
-            return subtraction();
+            firstComponent = subtraction(firstComponent, secondComponent);
+            break;
         case 'x':
-            return multiplication();
+            firstComponent = multiplication(firstComponent, secondComponent);
+            break;
         case '/':
-            return division(); 
+            firstComponent = division(firstComponent, secondComponent); 
+            break;
     }
+
+    operatorComponent = "";
+    secondComponent = "";
+    
+    const displayPicker = document.getElementById('display');
+    displayPicker.innerText = firstComponent;
 };
 
 
 /*
 Add the two numbers provided.
 */
-function addition(valueOne, valueTwo){
-    return valueOne + valueTwo;
+function addition(firstValue, secondValue){
+    return firstValue + secondValue;
 };
 
 
 /*
 Subtract the two numbers provided.
 */
-function subtraction(valueOne, valueTwo){
-    return valueOne - valueTwo;
+function subtraction(firstValue, secondValue){
+    return firstValue - secondValue;
 };
 
 
 /*
 Multiply the two numbers provided.
 */
-function multiplication(valueOne, valueTwo){
-    return valueOne * valueTwo;
+function multiplication(firstValue, secondValue){
+    return firstValue * secondValue;
 };
 
 
 /*
 Divide the two numbers provided.
 */
-function division(valueOne, valueTwo){
-    return valueOne / valueTwo;
+function division(firstValue, secondValue){
+    return firstValue / secondValue;
 };
