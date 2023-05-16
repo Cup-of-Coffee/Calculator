@@ -6,6 +6,7 @@
 # Separate erase into "Clear" which removes last input and "All Clear" which removes all inputs
 # Resolve edge-cases resulting in errors:
 > You can update() multiple decimals into a formula; it should be limited to only be added once.
+> You can erase all numbers on the display, making it blank; it should display a zero instead.
 */
 
 // The display components
