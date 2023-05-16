@@ -5,17 +5,13 @@
 # Add larger display to include firstComponent and operatorComponent above secondComponent
 # Separate erase into "Clear" which removes last input and "All Clear" which removes all inputs
 # Resolve edge-cases resulting in errors:
-> none currently.
+> You can update() multiple decimals into a formula; it should be limited to only be added once.
 */
 
 // The display components
 let firstComponent = "";
 let operatorComponent = "";
 let secondComponent = "";
-
-// Decimal point
-let decimalComponent;
-
 
 /*
 Populate the display with the latest number and update the display with DOM. These numbers are treated as strings.
@@ -78,14 +74,9 @@ Parse firstComponent and secondComponent into Ints, and use operatorComponent to
 then compute them calculation in order with the final result set to firstComponent and displayed.
 */
 function operate(){
-    if(!decimalComponent){
-        first = parseFloat(firstComponent);
-        second = parseFloat(secondComponent);
-    }else{
-        first = parseInt(firstComponent);
-        second = parseInt(secondComponent);
-    }
-
+    first = parseFloat(firstComponent);
+    second = parseFloat(secondComponent);
+    
     switch(operatorComponent){
         case '+':
             firstComponent = addition(first, second);
