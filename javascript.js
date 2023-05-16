@@ -33,16 +33,17 @@ function update(number){
 Clear the latest number in the string and use DOM to update the display.
 */
 function erase(){
-    let temporaryString;
-
     if(!operatorComponent){
-        temporaryString = firstComponent.slice(0, firstComponent.length - 1);
-    }else{
-        temporaryString = secondComponent.slice(0, secondComponent.length - 1);
-    }
+        firstComponent = firstComponent.slice(0, -1);
 
-    const displayPicker = document.getElementById('display');
-    displayPicker.innerText = temporaryString;
+        const displayPicker = document.getElementById('display');
+        displayPicker.innerText = firstComponent;
+    }else{
+        secondComponent = secondComponent.slice(0, -1);
+
+        const displayPicker = document.getElementById('display');
+        displayPicker.innerText = secondComponent;
+    }
 }
 
 
