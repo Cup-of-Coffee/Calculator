@@ -13,6 +13,9 @@ let firstComponent = "";
 let operatorComponent = "";
 let secondComponent = "";
 
+// Decimal point
+let decimalComponent;
+
 
 /*
 Populate the display with the latest number and update the display with DOM. These numbers are treated as strings.
@@ -75,8 +78,13 @@ Parse firstComponent and secondComponent into Ints, and use operatorComponent to
 then compute them calculation in order with the final result set to firstComponent and displayed.
 */
 function operate(){
-    first = parseInt(firstComponent);
-    second = parseInt(secondComponent);
+    if(!decimalComponent){
+        first = parseFloat(firstComponent);
+        second = parseFloat(secondComponent);
+    }else{
+        first = parseInt(firstComponent);
+        second = parseInt(secondComponent);
+    }
 
     switch(operatorComponent){
         case '+':
