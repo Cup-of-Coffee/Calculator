@@ -14,7 +14,7 @@ let operatorComponent = "";
 let secondComponent = "";
 
 /*
-Populate the display with the latest number and update the display with DOM. These numbers are treated as strings.
+Populate the display with the latest number in the string and update the display with DOM. These numbers are treated as strings.
 */
 function update(number){
     const displayPicker = document.getElementById('display');
@@ -30,9 +30,26 @@ function update(number){
 
 
 /*
-Clear variables and use DOM to reset the display.
+Clear the latest number in the string and use DOM to update the display.
 */
 function erase(){
+    let temporaryString;
+
+    if(!operatorComponent){
+        temporaryString = firstComponent.slice(0, firstComponent.length - 1);
+    }else{
+        temporaryString = secondComponent.slice(0, secondComponent.length - 1);
+    }
+
+    const displayPicker = document.getElementById('display');
+    displayPicker.innerText = temporaryString;
+}
+
+
+/*
+Clear all variables and use DOM to reset the display.
+*/
+function eraseAll() {
     firstComponent = "";
     operatorComponent = "";
     secondComponent = "";
