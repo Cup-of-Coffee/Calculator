@@ -18,71 +18,59 @@ let secondComponent = "";
 document.addEventListener('keydown', (event) => {
 
     switch(event.key){
-        case 0:
-
-        break;
-        case 1:
-
-        break;
-        case 2:
-
-        break;
-        case 3:
-
-        break;
-        case 4:
-
-        break;
-        case 5:
-
-        break;
-        case 6:
-
-        break;
-        case 7:
-
-        break;
-        case 8:
-
-        break;
-        case 9:
-
-        break;
+        case '0':
+            update(0);
+            break;
+        case '1':
+            update(1);
+            break;
+        case '2':
+            update(2);
+            break;
+        case '3':
+            update(3);
+            break;
+        case '4':
+            update(4);
+            break;
+        case '5':
+            update(5);
+            break;
+        case '6':
+            update(6);
+            break;
+        case '7':
+            update(7);
+            break;
+        case '8':
+            update(8);
+            break;
+        case '9':
+            update(9);
+            break;
         case '+':
-
-        break;
+            calculate('+');
+            break;
         case '-':
-
-        break;
+            calculate('-');
+            break;
         case 'x':
-
-        break;
+            calculate('x');
+            break;
         case '/':
-
-        break;
+            calculate('/');
+            break;
         case 'c':
-
-        break;
+            erase('c');
+            break;
         case 'a':
-
-        break;
-        case '/':
-
-        break;
+            eraseAll();
+            break;
         case '=':
-
-        break;
-    }
-
-    var keyValue = event.key;
-  
-    var codeValue = event.code;
-  
-    console.log("keyValue: " + keyValue);
-  
-    console.log("codeValue: " + codeValue);
-  
-  }, false);
+            operate();
+            break;
+    }  
+  });
   
 
 
