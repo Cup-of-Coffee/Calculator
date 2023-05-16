@@ -9,10 +9,82 @@
 > You can erase all numbers on the display, making it blank; it should display a zero instead.
 */
 
-// The display components
+// The display components.
 let firstComponent = "";
 let operatorComponent = "";
 let secondComponent = "";
+
+// Keyboard Events for 0-9, +, -, x, /, ., =, c and ac.
+document.addEventListener('keydown', (event) => {
+
+    switch(event.key){
+        case 0:
+
+        break;
+        case 1:
+
+        break;
+        case 2:
+
+        break;
+        case 3:
+
+        break;
+        case 4:
+
+        break;
+        case 5:
+
+        break;
+        case 6:
+
+        break;
+        case 7:
+
+        break;
+        case 8:
+
+        break;
+        case 9:
+
+        break;
+        case '+':
+
+        break;
+        case '-':
+
+        break;
+        case 'x':
+
+        break;
+        case '/':
+
+        break;
+        case 'c':
+
+        break;
+        case 'a':
+
+        break;
+        case '/':
+
+        break;
+        case '=':
+
+        break;
+    }
+
+    var keyValue = event.key;
+  
+    var codeValue = event.code;
+  
+    console.log("keyValue: " + keyValue);
+  
+    console.log("codeValue: " + codeValue);
+  
+  }, false);
+  
+
 
 /*
 Populate the display with the latest number in the string and update the display with DOM. These numbers are treated as strings.
