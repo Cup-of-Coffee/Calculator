@@ -14,6 +14,13 @@ button {
     margin: 10px;
 }
 
+#container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    padding: 100px 50px 100px 50px;
+}
+
 #display {
     display: flex;
     flex-direction: column;
@@ -21,22 +28,14 @@ button {
     text-align: right;
     font-weight: bold;
     border-radius: 5px;
-    width: 400px;
+    width: 500px;
     height: 100px;
     font-size: 50px;
     background-color: darkgrey;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
 }
 
 #zero {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
 
-#container {
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
-    padding: 100px 50px 100px 50px;
 }

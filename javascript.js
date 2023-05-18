@@ -1,9 +1,8 @@
 /* TODO
-# Add decimals
 # Add modus operator
-# Add keyboard support
 # Add larger display to include firstComponent and operatorComponent above secondComponent
-# Separate erase into "Clear" which removes last input and "All Clear" which removes all inputs
+# Add a button to flip calculator to show instructions and explainations on the back (done as a second tab)
+
 # Resolve edge-cases resulting in errors:
 > You can update() multiple decimals into a formula; it should be limited to only be added once.
 > You can erase all numbers on the display, making it blank; it should display a zero instead.
