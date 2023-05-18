@@ -59,6 +59,9 @@ document.addEventListener('keydown', (event) => {
         case '/':
             calculate('/');
             break;
+        case '%':
+            calculate('%');
+            break;
         case 'c':
             erase('c');
             break;
@@ -143,6 +146,9 @@ function calculate(operator){
         case '/':
             operatorComponent = '/';
             break;
+        case '%':
+            operatorComponent = '%';
+            break;
     }
 }
 
@@ -167,6 +173,9 @@ function operate(){
             break;
         case '/':
             firstComponent = division(first, second); 
+            break;
+        case '%':
+            firstComponent = modulus(first, second); 
             break;
     }
 
@@ -212,5 +221,18 @@ function division(firstValue, secondValue){
         return "CANNOT DIVIDE"
     }else{
         return (firstValue / secondValue);
+    }
+};
+
+/*
+Get remainder of the two numbers provided.
+*/
+function modulus(firstValue, secondValue){
+    console.log(firstValue);
+    console.log(secondValue);
+    if(firstValue === 0 && secondValue === 0){
+        return "CANNOT DIVIDE"
+    }else{
+        return (firstValue % secondValue);
     }
 };
