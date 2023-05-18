@@ -1,11 +1,11 @@
 /* TODO
-# Add modus operator
 # Add larger display to include firstComponent and operatorComponent above secondComponent
 # Add a button to flip calculator to show instructions and explainations on the back (done as a second tab)
 
 # Resolve edge-cases resulting in errors:
 > You can update() multiple decimals into a formula; it should be limited to only be added once.
 > You can erase all numbers on the display, making it blank; it should display a zero instead.
+> Numbers can get large enough to go off the display element; limit the number of characters it can show.
 */
 
 // The display components.
@@ -215,8 +215,6 @@ function multiplication(firstValue, secondValue){
 Divide the two numbers provided.
 */
 function division(firstValue, secondValue){
-    console.log(firstValue);
-    console.log(secondValue);
     if(firstValue === 0 && secondValue === 0){
         return "CANNOT DIVIDE"
     }else{
@@ -228,8 +226,6 @@ function division(firstValue, secondValue){
 Get remainder of the two numbers provided.
 */
 function modulus(firstValue, secondValue){
-    console.log(firstValue);
-    console.log(secondValue);
     if(firstValue === 0 && secondValue === 0){
         return "CANNOT DIVIDE"
     }else{
