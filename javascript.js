@@ -179,6 +179,7 @@ function operate(){
             break;
     }
 
+    firstComponent = firstComponent.toString();
     operatorComponent = "";
     secondComponent = "";
     
@@ -232,3 +233,28 @@ function modulus(firstValue, secondValue){
         return (firstValue % secondValue);
     }
 };
+
+/*
+Add or remove a negative sign to the numbers and use DOM to update the display.
+*/
+function negative() {
+    if(secondComponent){
+        if(Array.from(secondComponent)[0] === '-'){
+            secondComponent = secondComponent.slice(1);
+        }else{
+            secondComponent = '-' + secondComponent
+        }
+
+        const displayPicker = document.getElementById('display');
+        displayPicker.innerText = secondComponent;
+    }else{
+        if(Array.from(firstComponent)[0] === '-'){
+            firstComponent = firstComponent.slice(1);
+        }else{
+            firstComponent = '-' + firstComponent
+        }
+
+        const displayPicker = document.getElementById('display');
+        displayPicker.innerText = firstComponent;
+    }
+}
