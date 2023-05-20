@@ -9,6 +9,8 @@ body {
 }
 
 button {
+    color: white;
+
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
@@ -40,8 +42,8 @@ button {
     grid-column-end: 6;
 }
 
-#dark-grey {
-
+#grey {
+    background-color: dimgray;
 }
 
 #light-grey {
