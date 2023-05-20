@@ -5,7 +5,7 @@ body {
     justify-content: center;
     margin: 0px;
     padding: 0px;
-    background-color: lightgrey;
+    background-color: black;
 }
 
 button {
@@ -15,10 +15,13 @@ button {
 }
 
 #container {
+    background-color: grey;
+    border-radius: 10px;
+
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px;
     grid-template-rows: 100px 100px 100px 100px 100px;
-    padding: 100px 50px 100px 50px;
+    padding: 25px 25px 25px 25px;
 }
 
 #display {
@@ -31,6 +34,7 @@ button {
     width: 500px;
     height: 100px;
     font-size: 50px;
+    color: white;
     background-color: darkgrey;
     grid-column-start: 1;
     grid-column-end: 6;
@@ -39,3 +43,16 @@ button {
 #zero {
 
 }
+
+#dark-grey {
+
+}
+
+#light-grey {
+
+}
+
+
+
+
+
