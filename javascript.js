@@ -84,10 +84,10 @@ function update(number){
 
     if(!operatorComponent){
         firstComponent += number;
-        displayPicker.innerText = firstComponent;
+        displayPicker.innerText = firstComponent.substring(0,14);
     }else{
         secondComponent += number;
-        displayPicker.innerText = secondComponent;
+        displayPicker.innerText = secondComponent.substring(0,14);
     }
 }
 
@@ -100,12 +100,12 @@ function erase(){
         firstComponent = firstComponent.slice(0, -1);
 
         const displayPicker = document.getElementById('display');
-        displayPicker.innerText = firstComponent;
+        displayPicker.innerText = firstComponent.substring(0,14);
     }else{
         secondComponent = secondComponent.slice(0, -1);
 
         const displayPicker = document.getElementById('display');
-        displayPicker.innerText = secondComponent;
+        displayPicker.innerText = secondComponent.substring(0,14);
     }
 }
 
@@ -184,7 +184,7 @@ function operate(){
     secondComponent = "";
     
     const displayPicker = document.getElementById('display');
-    displayPicker.innerText = firstComponent;
+    displayPicker.innerText = firstComponent.substring(0,14);
 };
 
 
@@ -246,7 +246,7 @@ function negative() {
         }
 
         const displayPicker = document.getElementById('display');
-        displayPicker.innerText = secondComponent;
+        displayPicker.innerText = secondComponent.substring(0,14);
     }else{
         if(Array.from(firstComponent)[0] === '-'){
             firstComponent = firstComponent.slice(1);
@@ -255,6 +255,6 @@ function negative() {
         }
 
         const displayPicker = document.getElementById('display');
-        displayPicker.innerText = firstComponent;
+        displayPicker.innerText = firstComponent.substring(0,14);
     }
 }
