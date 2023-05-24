@@ -11,6 +11,7 @@
 let firstComponent = "";
 let operatorComponent = "";
 let secondComponent = "";
+let decimalCounter = false;
 
 // Keyboard Events for 0-9, +, -, x, /, ., =, c and ac.
 document.addEventListener('keydown', (event) => {
@@ -45,6 +46,9 @@ document.addEventListener('keydown', (event) => {
             break;
         case '9':
             update(9);
+            break;
+        case '.':
+            update('.');
             break;
         case '+':
             calculate('+');
@@ -81,6 +85,12 @@ Populate the display with the latest number in the string and update the display
 function update(number){
     const displayPicker = document.getElementById('display');
 
+    if(number === '.' && decimalCounter){
+        return;
+    }else if(number === '.'){
+        decimalCounter = true;
+    }
+
     if(!operatorComponent){
         firstComponent += number;
         displayPicker.innerText = firstComponent.substring(0,14);
@@ -96,6 +106,10 @@ Clear the latest number in the string and use DOM to update the display.
 */
 function erase(){
     if(!operatorComponent){
+        if(firstComponent[firstComponent.length - 1] === '.'){
+            decimalCounter = false;
+        }
+
         firstComponent = firstComponent.slice(0, -1);
 
         const displayPicker = document.getElementById('display');
@@ -116,6 +130,7 @@ function eraseAll() {
     firstComponent = "";
     operatorComponent = "";
     secondComponent = "";
+    decimalCounter = false;
     
     const displayPicker = document.getElementById('display');
     displayPicker.innerText = "0";
